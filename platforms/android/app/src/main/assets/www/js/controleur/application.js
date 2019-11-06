@@ -18,7 +18,14 @@
         }else if (hash.match(/^#ajouter-gpu/)) {
             var ajouterGpuVue = new AjouterGpuVue(actionAjouterGpu);
             ajouterGpuVue.afficher();
-        }
+        }else {
+             var navigation = hash.match(/^#gpu\/([0-9]+)/);
+             var idGpu = navigation[1];
+
+             var listeGpuDonnee = gpuDAO.lister();
+             var gpuVue = new GpuVue(listeGpuDonnee[idGpu]);
+             gpuVue.afficher();
+         }
     }
 
     var actionAjouterGpu = function (gpu) {

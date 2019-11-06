@@ -16,10 +16,10 @@ var AjouterGpuVue = (function () {
 
             var nom = document.getElementById("gpu-nom").value;
             var marque = document.getElementById("gpu-marque").value;
-            var description = document.getElementById("gpu-frequence").value;
-            var description = document.getElementById("gpu-nombreCoeur").value;
+            var frequence = document.getElementById("gpu-frequence").value;
+            var nombreCoeur = document.getElementById("gpu-nombreCoeur").value;
 
-            var gpu = new Gpu(nom, marque, description, null);
+            var gpu = new Gpu(nom, marque, frequence,nombreCoeur, null);
             actionAjouterGpu(gpu);
 
         }
