@@ -3,7 +3,7 @@ var ModifierGpuVue = (function () {
 
 
     return function (actionModifierGpu, gpu) {
-        this.afficher = function () {s
+        this.afficher = function () {
             elementBody = document.getElementsByTagName("body")[0];
             elementBody.innerHTML = pageModifierGpu;
 

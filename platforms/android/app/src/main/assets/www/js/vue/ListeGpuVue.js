@@ -10,10 +10,14 @@ var ListeGpuVue = (function () {
 
             var texteLi ="";
             for (var numeroGpu in listeGpuDonnee){
-                texteLi += '<li><a href="#gpu/'+listeGpuDonnee[numeroGpu].id+'">'
-                    +listeGpuDonnee[numeroGpu].nom +'</a>' +
-                    '<a href="#modifier-gpu/'+listeGpuDonnee[numeroGpu].id+'">'
-                    +'<button> Modifier </button></a></li>';
+                texteLi += '<tr>' +
+                    '<td><a href="#gpu/'+listeGpuDonnee[numeroGpu].id+'">'
+                    +listeGpuDonnee[numeroGpu].nom +'</a> </td>' +
+                    '<td>'
+                    +listeGpuDonnee[numeroGpu].marque +' </td>' +
+                    '<td><a  class="waves-effect waves-light btn" href="#modifier-gpu/'+listeGpuDonnee[numeroGpu].id+'">'
+                    +'Modifier</a> </td>' +
+                    '<tr>';
             }
             listeGpu.innerHTML = texteLi;
         }

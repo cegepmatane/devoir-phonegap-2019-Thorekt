@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Liste des Gpu's</title>
-      <!--Import Google Icon Font-->
+    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,86 +15,187 @@
 </head>
 
 <body>
-bug du js
-<script id="page-liste-gpu" type="plain/text">
-        <div class="page-liste-gpu">
-            <h1> Liste des gpu's </h1>
-            <a href="#ajouter-gpu">Ajouter un gpu</a>
-            <ul id="liste-gpu"></ul>
-        </div>
-</script>
 
-<script type="plain/text" id="page-gpu">
+<div class="container">
+    bug du js
+    <div class="row">
+
+
+        <script id="page-liste-gpu" type="plain/text">
+        <div class="page-liste-gpu">
+        <h1 class=""> Liste des gpu's </h1>
+        <table class="centered highlight">
+            <thead>
+              <tr>
+                  <th>Nom</th>
+                  <th>Maque</th>
+                  <th></th>
+              </tr>
+            </thead>
+              <tbody id="liste-gpu">
+            </tbody>
+        </table>
+        <a  class="waves-effect waves-light btn" href="#ajouter-gpu">Ajouter un gpu</a>
+
+
+
+
+
+
+        </script>
+
+        <script type="plain/text" id="page-gpu">
         <h1 id="gpu-nom"></h1>
         <h2 id="gpu-marque"></h2>
         <div id="gpu-frequence"></div>
         <div id="gpu-nombreCoeur"></div>
         <a href="#">Revenir &agrave; la liste </a>
 
-    </script>
-
-<script type="plain/text" id="page-ajouter-gpu">
-     <h1>Ajouter un gpu</h1>
-	 <article id='main' class="current">
-	    <section>
-			<form id="formulaire-ajouter">
-				<fieldset>
-				<legend>Identification du gpu</legend>
-				<div>
-					<label for="gpu-nom">Nom</label>
-					<input type="text" name="nom" id="gpu-nom"/>
-				</div>
-				<div>
-					<label for="gpu-marque">Marque</label>
-					<input type="text" name="marque" id="gpu-marque"/>
-				</div>
-				<div>
-					<label for="gpu-frequence">Frequence</label>
-					<input type="text" name="frequence" id="gpu-frequence"></input>
-				</div>
-				<div>
-					<label for="gpu-nombreCoeur">Nombre de coeur</label>
-					<input type="text" name="nombreCoeur" id="gpu-nombreCoeur"></input>
-				</div>
-				</fieldset>
-				<input type="submit" id="enregistrer" name="enregistrer" value="Enregistrer"/>
-			</form>
-			<a href="#">Annuler et revenir &agrave; la liste</a>
-	    </section>
-	  </article>
-    </script>
 
 
-<script type="plain/text" id="page-modifier-gpu">
-     <h1>Modifier un gpu</h1>
-	 <article id='main' class="current">
-	    <section>
-			<form id="formulaire-modifier">
-				<fieldset>
-				<legend>Identification du gpu</legend>
-				<div>
-					<label for="gpu-nom">Nom</label>
-					<input type="text" name="nom" id="gpu-nom"/>
-				</div>
-				<div>
-					<label for="gpu-marque">Marque</label>
-					<input type="text" name="marque" id="gpu-marque"/>
-				</div>
-				<div>
-					<label for="gpu-frequence">Frequence</label>
-					<input type="text" name="frequence" id="gpu-frequence"></input>
-				</div>
-				<div>
-					<label for="gpu-nombreCoeur">Nombre de coeur</label>
-					<input type="text" name="nombreCoeur" id="gpu-nombreCoeur"></input>
-				</div>
-				</fieldset>
-				<input type="submit" id="enregistrer" name="enregistrer" value="Enregistrer"/>
-			</form>
-			<a href="#">Annuler et revenir &agrave; la liste</a>
-	    </section>
-	  </article>
-    </script>
+
+
+
+
+        </script>
+
+        <script type="plain/text" id="page-ajouter-gpu">
+        <div class="row">
+            <div class="col s1">
+            </div>
+            <div class="col s10">
+                <h2>Ajouter un gpu</h2>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12" id="formulaire-ajouter">
+
+                <div class="row">
+                  <div class="col s1">
+                  </div>
+                  <div class="col s1">
+                      <label for="gpu-nom">Nom</label>
+                  </div>
+                  <div class="input-field col s9">
+                      <input type="text" name="nom" id="gpu-nom"/>
+                  </div>
+                 </div>
+
+                <div class="row">
+                   <div class="col s1">
+                   </div>
+                   <div class="col s1">
+                       <label for="gpu-marque">Marque</label>
+                   </div>
+                   <div class="input-field col s9">
+                        <input type="text" name="marque" id="gpu-marque"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s1">
+                        <label for="gpu-frequence">Frequence</label>
+                    </div>
+                    <div class="input-field col s9">
+                        <input type="text" name="frequence" id="gpu-frequence"></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s1">
+                        <label for="gpu-nombreCoeur">Coeurs</label>
+                    </div>
+                    <div class="input-field col s9">
+                        <input type="text" name="nombreCoeur" id="gpu-nombreCoeur"></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+
+                    <input class="btn" type="submit" id="enregistrer" name="enregistrer" value="Enregistrer"/>
+                    <a class="waves-effect waves-light btn" href="#">Annuler et revenir &agrave; la liste</a>
+                </div>
+            </form>
+
+        </div>
+
+        </script>
+
+        <script type="plain/text" id="page-modifier-gpu">
+        <div class="row">
+            <div class="col s1">
+            </div>
+            <div class="col s10">
+            <h2>Modifier un gpu</h2>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12" id="formulaire-modifier">
+
+                <div class="row">
+                  <div class="col s1">
+                  </div>
+                  <div class="col s1">
+                      <label for="gpu-nom">Nom</label>
+                  </div>
+                  <div class="input-field col s9">
+                      <input type="text" name="nom" id="gpu-nom"/>
+                  </div>
+                 </div>
+
+                <div class="row">
+                   <div class="col s1">
+                   </div>
+                   <div class="col s1">
+                       <label for="gpu-marque">Marque</label>
+                   </div>
+                   <div class="input-field col s9">
+                        <input type="text" name="marque" id="gpu-marque"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s1">
+                        <label for="gpu-frequence">Frequence</label>
+                    </div>
+                    <div class="input-field col s9">
+                        <input type="text" name="frequence" id="gpu-frequence"></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s1">
+                        <label for="gpu-nombreCoeur">Coeurs</label>
+                    </div>
+                    <div class="input-field col s9">
+                        <input type="text" name="nombreCoeur" id="gpu-nombreCoeur"></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+
+                    <input class="btn" type="submit" id="enregistrer" name="enregistrer" value="Enregistrer"/>
+                    <a class="waves-effect waves-light btn" href="#">Annuler et revenir &agrave; la liste</a>
+                </div>
+            </form>
+
+        </div>
+        </script>
+
+    </div>
+</div>
 
 <script src="js/modele/Gpu.js"></script>
 <script src="js/donnee/GpuDAO.js"></script>
