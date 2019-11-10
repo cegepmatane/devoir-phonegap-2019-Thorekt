@@ -22,41 +22,67 @@
 
 
         <script id="page-liste-gpu" type="plain/text">
-        <div class="page-liste-gpu">
-        <h1 class=""> Liste des gpu's </h1>
-        <table class="centered highlight">
-            <thead>
-              <tr>
-                  <th>Nom</th>
-                  <th>Maque</th>
-                  <th></th>
-              </tr>
-            </thead>
-              <tbody id="liste-gpu">
-            </tbody>
-        </table>
-        <a  class="waves-effect waves-light btn" href="#ajouter-gpu">Ajouter un gpu</a>
-
-
-
-
-
-
+        <div class="row">
+            <div class="col s1">
+            </div>
+            <div class="col s10">
+                <h2>Liste de gpu</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s1">
+            </div>
+             <div class="col s10">
+                 <table class="centered highlight">
+                    <thead>
+                      <tr>
+                          <th>Nom</th>
+                          <th>Maque</th>
+                          <th></th>
+                      </tr>
+                    </thead>
+                      <tbody id="liste-gpu">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s1">
+            </div>
+            <a  class="waves-effect waves-light btn" href="#ajouter-gpu">Ajouter un gpu</a>
+        </div>
         </script>
 
         <script type="plain/text" id="page-gpu">
-        <h1 id="gpu-nom"></h1>
-        <h2 id="gpu-marque"></h2>
-        <div id="gpu-frequence"></div>
-        <div id="gpu-nombreCoeur"></div>
-        <a href="#">Revenir &agrave; la liste </a>
-
-
-
-
-
-
-
+         <div class="row">
+            <div class="col s1">
+            </div>
+            <div class="col s4">
+                <h2><label for="gpu-nom">Nom</label> <div id="gpu-nom"></div></h2>
+            </div>
+            <div class="col s4">
+                <h2><label for="gpu-nom">Marque</label> <div id="gpu-marque"></div></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s1">
+            </div>
+            <div class="col s9">
+                <h2><label for="gpu-nom">Frequence</label> <div id="gpu-frequence"></div></h2>
+            </div>
+        </div>
+        <div class="row">        
+            <div class="col s1">
+            </div>
+            <div class="col s9">
+                <h2><label for="gpu-nom">Nombre de coeurs</label> <div id="gpu-nombreCoeur"></div></h2>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col s1">
+            </div>
+            <a  class="waves-effect waves-light btn" href="#">Revenir &agrave; la liste</a>
+        </div>
         </script>
 
         <script type="plain/text" id="page-ajouter-gpu">
