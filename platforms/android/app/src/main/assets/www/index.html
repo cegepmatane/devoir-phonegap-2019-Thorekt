@@ -59,10 +59,43 @@ bug du js
 	  </article>
     </script>
 
+
+<script type="plain/text" id="page-modifier-gpu">
+     <h1>Modifier un gpu</h1>
+	 <article id='main' class="current">
+	    <section>
+			<form id="formulaire-modifier">
+				<fieldset>
+				<legend>Identification du gpu</legend>
+				<div>
+					<label for="gpu-nom">Nom</label>
+					<input type="text" name="nom" id="gpu-nom"/>
+				</div>
+				<div>
+					<label for="gpu-marque">Marque</label>
+					<input type="text" name="marque" id="gpu-marque"/>
+				</div>
+				<div>
+					<label for="gpu-frequence">Frequence</label>
+					<input type="text" name="frequence" id="gpu-frequence"></input>
+				</div>
+				<div>
+					<label for="gpu-nombreCoeur">Nombre de coeur</label>
+					<input type="text" name="nombreCoeur" id="gpu-nombreCoeur"></input>
+				</div>
+				</fieldset>
+				<input type="submit" id="enregistrer" name="enregistrer" value="Enregistrer"/>
+			</form>
+			<a href="#">Annuler et revenir &agrave; la liste</a>
+	    </section>
+	  </article>
+    </script>
+
 <script src="js/modele/Gpu.js"></script>
 <script src="js/donnee/GpuDAO.js"></script>
-<script src="js/vue/GpuVue.js"></script>
 <script src="js/vue/AjouterGpuVue.js"></script>
+<script src="js/vue/ModifierGpuVue.js"></script>
+<script src="js/vue/GpuVue.js"></script>
 <script src="js/vue/ListeGpuVue.js"></script>
 <script src="js/controleur/application.js"></script>
 

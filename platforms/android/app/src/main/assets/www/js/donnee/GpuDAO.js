@@ -1,6 +1,7 @@
 var GpuDAO = function () {
 
     var listeGpu = null;
+
     var initialiser = function(){
         if(!listeGpu){
             listeGpu = [];
@@ -37,5 +38,15 @@ var GpuDAO = function () {
         console.log("JSON.stringify(listeGpu) : "+ localStorage['gpu']);
     }
 
+    this.modifier = function (gpu) {
+        listeGpu[gpu.id]=gpu;
+        localStorage['gpu'] = JSON.stringify(listeGpu);
+        console.log("JSON.stringify(listeGpu) : "+ localStorage['gpu']);
+    }
+
+    this.chercherGpuParId = function (idGpu) {
+        return listeGpu[idGpu];
+    };
+
     initialiser();
-}
+};
