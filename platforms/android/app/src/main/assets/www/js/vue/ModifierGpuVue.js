@@ -9,8 +9,8 @@ var ModifierGpuVue = (function () {
 
             document.getElementById("gpu-nom").value = gpu.nom;
             document.getElementById("gpu-marque").value = gpu.marque;
-            document.getElementById("gpu-frequence").innerHTML = gpu.frequence;
-            document.getElementById("gpu-nombreCoeur").innerHTML = gpu.nombreCoeur;
+            document.getElementById("gpu-frequence").value = gpu.frequence;
+            document.getElementById("gpu-nombreCoeur").value = gpu.nombreCoeur;
             console.log(gpu.frequence);
 
             var formulaireModifier = document.getElementById("formulaire-modifier");
